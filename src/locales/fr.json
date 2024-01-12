@@ -6,6 +6,12 @@
     "subtitle3": "Parfois, la meilleure compagnie est juste vous, vos écouteurs et la musique.",
     "Songs": "Chansons"
   },
+  "about": {
+    "about": "À propos de sous",
+    "about1": "Un 'aficionado de la musique' est une personne qui apprécie et poursuit la musique.",
+    "about2": "Si quelqu'un est accro à la musique, on peut dire qu'il s'agit d'un “melomaniac.”",
+    "about3": "Si quelqu'un aime simplement chanter ou écouter de la musique, on peut l'appeler un “melophile.”"
+  },
   "song": {
     "comment_count": "Pas de commentaires | 1 commentaire | {count} commentaires",
     "order-Latest": "Le plus récent",

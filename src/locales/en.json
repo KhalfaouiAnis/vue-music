@@ -6,6 +6,12 @@
     "subtitle3": "Sometimes the best company is just you, your headphones, and the music.",
     "Songs": "Songs"
   },
+  "about": {
+    "about": "About Us",
+    "about1": "A “music aficionado” is someone who appreciates and pursues music.",
+    "about2": "If someone has an addiction to music, you can call them a “melomaniac.”",
+    "about3": "If someone simply loves singing or listening to music, you can call them a “melophile.”"
+  },
   "song": {
     "comment_count": "No comments | 1 comment | {count} comments",
     "order-Latest": "Latest",

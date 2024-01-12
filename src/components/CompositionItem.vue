@@ -32,7 +32,7 @@
         <button type="submit" class="py-1.5 px-3 rounded text-white bg-green-600" :disabled="in_submission">
           {{ $t("buttons.Submit") }}
         </button>
-        <button type="button" class="py-1.5 px-3 rounded text-white bg-gray-600" :disabled="in_submission"
+        <button type="button" class="py-1.5 px-3 rounded text-white bg-gray-600 ml-2" :disabled="in_submission"
           @click.prevent="showForm = false">
           {{ $t("buttons.GoBack") }}
         </button>
