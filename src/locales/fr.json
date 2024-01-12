@@ -1,9 +1,21 @@
 {
   "home": {
-    "listen": "Ecouter de la bonne musique!"
+    "title": "Ecouter de la bonne musique!",
+    "subtitle1": "La musique est la bande sonore de nos émotions, et lorsque nous sommes seuls avec elle, nous pouvons explorer les profondeurs de notre âme.",
+    "subtitle2": "Écouter de la musique seul, c'est comme avoir une conversation secrète avec son âme.",
+    "subtitle3": "Parfois, la meilleure compagnie est juste vous, vos écouteurs et la musique.",
+    "Songs": "Chansons"
   },
   "song": {
-    "comment_count": "Pas de commentaires | 1 commentaire | {count} commentaires"
+    "comment_count": "Pas de commentaires | 1 commentaire | {count} commentaires",
+    "order-Latest": "Le plus récent",
+    "order-Oldest": "Le plus ancien",
+    "Song-Title": "Titre de la chanson",
+    "Song-Enter-Song-Title": "Entrer le titre de la chanson",
+    "Genre": "Genre",
+    "by": "par",
+    "Upload": "Charger",
+    "drop-files-here": "Déposer vos fichiers ici"
   },
   "register": {
     "accept": "J'accepte les {0}",
@@ -11,5 +23,30 @@
   },
   "manage": {
     "my_songs": "Mes chansons"
+  },
+  "header": {
+    "About": "À propos",
+    "Log-Reg": "Se connecter / S'inscrire",
+    "Manage": "Gérer",
+    "Logout": "Se déconnecter"
+  },
+  "auth": {
+    "Your-Acc": "Votre Compte",
+    "Login": "Se connecter",
+    "Register": "S'inscrire",
+    "Email": "Courrier électronique",
+    "Password": "Mot de passe",
+    "Confirm-Pass": "Confirmer le mot de passe",
+    "Name": "Nom utilisateur",
+    "Enter-Name": "Saisir le nom utilisateur",
+    "Enter-Email": "Saisir l'email",
+    "Enter-Pass": "Saisir le mot de passe",
+    "Enter-Conf-Pass": "Confirmer le mot de passe",
+    "Age": "Âge",
+    "Country": "Pays"
+  },
+  "buttons": {
+    "Submit": "Soumettre",
+    "GoBack": "Retour"
   }
 }

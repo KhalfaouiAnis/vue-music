@@ -1,6 +1,6 @@
 {
   "name": "vue-music",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,6 +17,7 @@
     "@vee-validate/rules": "^4.12.4",
     "firebase": "^8.10.1",
     "howler": "^2.2.4",
+    "nprogress": "^0.2.0",
     "pinia": "^2.1.7",
     "vee-validate": "^4.12.4",
     "vue": "^3.3.11",
@@ -36,9 +37,11 @@
     "jsdom": "^23.0.1",
     "postcss": "^8.4.33",
     "prettier": "^3.0.3",
+    "rollup-plugin-visualizer": "^5.12.0",
     "start-server-and-test": "^2.0.3",
     "tailwindcss": "^3.4.1",
     "vite": "^5.0.10",
+    "vite-plugin-pwa": "^0.17.4",
     "vitest": "^1.0.4"
   }
 }

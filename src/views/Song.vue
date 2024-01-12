@@ -6,7 +6,7 @@
         style="background-image: url(/assets/img/song-header.png)"></div>
       <div class="container mx-auto flex items-center">
         <!-- Play/Pause Button -->
-        <button @click.prevent="newSong(song)" type="button"
+        <button @click.prevent="newSong(song)" type="button" id="play-btn"
           class="z-50 h-24 w-24 text-3xl bg-white text-black rounded-full focus:outline-none">
           <i class="fas fa-play"></i>
         </button>
@@ -38,14 +38,14 @@
             <ErrorMessage class="text-red-600" name="comment" />
             <button type="submit" class="py-1.5 px-3 rounded text-white bg-green-600 block"
               :disabled="comment_in_submission">
-              Submit
+              {{ $t("buttons.Submit") }}
             </button>
           </vee-form>
           <!-- Sort Comments -->
           <select v-model="sort"
             class="block mt-4 py-1.5 px-3 text-gray-800 border border-gray-300 transition duration-500 focus:outline-none focus:border-black rounded">
-            <option value="1">Latest</option>
-            <option value="2">Oldest</option>
+            <option value="1">{{ $t("song.order-Latest") }}</option>
+            <option value="2">{{ $t("song.order-Oldest") }}</option>
           </select>
         </div>
       </div>
@@ -58,7 +58,6 @@
           <div class="font-bold">{{ comment.name }}</div>
           <time>{{ comment.datePosted }}</time>
         </div>
-
         <p>{{ comment.content }}</p>
       </li>
     </ul>
@@ -99,20 +98,24 @@ export default {
       });
     },
   },
-  async created() {
-    const docSnapshot = await songsCollection.doc(this.$route.params.id).get();
+  async beforeRouteEnter(to, from, next) {
+    const docSnapshot = await songsCollection.doc(to.params.id).get();
 
-    if (!docSnapshot.exists) {
-      this.$router.push({ name: "home" });
-      return;
-    }
+    next((vm) => {
 
-    const { sort } = this.$route.query;
+      if (!docSnapshot.exists) {
+        vm.$router.push({ name: "home" });
+        return;
+      }
 
-    this.sort = sort === "1" || sort === "2" ? sort : "1";
+      const { sort } = vm.$route.query;
 
-    this.song = docSnapshot.data();
-    this.getComments();
+      vm.sort = sort === "1" || sort === "2" ? sort : "1";
+
+      vm.song = docSnapshot.data();
+      vm.getComments();
+    });
+
   },
   methods: {
     ...mapActions(usePlayerStore, ["newSong"]),

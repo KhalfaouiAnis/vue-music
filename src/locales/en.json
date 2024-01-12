@@ -1,9 +1,21 @@
 {
   "home": {
-    "listen": "Listen to Great Music!"
+    "title": "Listen to Great Music!",
+    "subtitle1": "Music is the soundtrack of our emotions, and when we're alone with it, we get to explore the depths of our souls.",
+    "subtitle2": "Listening to music alone is like having a secret conversation with your soul.",
+    "subtitle3": "Sometimes the best company is just you, your headphones, and the music.",
+    "Songs": "Songs"
   },
   "song": {
-    "comment_count": "No comments | 1 comment | {count} comments"
+    "comment_count": "No comments | 1 comment | {count} comments",
+    "order-Latest": "Latest",
+    "order-Oldest": "Oldest",
+    "Song-Title": "Song Title",
+    "Song-Enter-Song-Title": "Enter Song Title",
+    "Genre": "Genre",
+    "by": "by",
+    "Upload": "Upload",
+    "drop-files-here": "Drop your files here"
   },
   "register": {
     "accept": "I accept Music's {0}",
@@ -11,5 +23,30 @@
   },
   "manage": {
     "my_songs": "My Songs"
+  },
+  "header": {
+    "About": "About",
+    "Log-Reg": "Login / Register",
+    "Manage": "Manage",
+    "Logout": "Logout"
+  },
+  "auth": {
+    "Your-Acc": "Your Account",
+    "Login": "Login",
+    "Register": "Register",
+    "Email": "Email",
+    "Password": "Password",
+    "Name": "Name",
+    "Enter-Name": "Enter Name",
+    "Enter-Email": "Enter Email",
+    "Enter-Pass": "Enter Password",
+    "Enter-Conf-Pass": "Confirm Password",
+    "Age": "Age",
+    "Country": "Country",
+    "Confirm-Pass": "Confirm Password"
+  },
+  "buttons": {
+    "Submit": "Submit",
+    "GoBack": "Go Back"
   }
 }
